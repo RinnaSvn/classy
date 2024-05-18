@@ -26,7 +26,7 @@ def ask_lang():
 
 
 def ask_plant():
-    ask = random.choice(lang_base.readlines()).rstrip().split(';')
+    ask = random.choice(plant_base.readlines()).rstrip().split(';')
     return ask
 
 '''
@@ -36,7 +36,7 @@ def  asking():
     if mode == 'anim':
         base = open('файл с животными')
         ask = random.choice(base.readlines()).split(';')ask = random.choice(base.readlines()).split(';')
-    if mode == 'anim':
+    if mode == 'plant':
         base = open('файл с растениями')
         ask = random.choice(base.readlines()).split(';')
     if mode == 'lang':
